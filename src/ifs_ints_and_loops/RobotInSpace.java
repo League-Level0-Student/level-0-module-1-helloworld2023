@@ -8,13 +8,16 @@ package ifs_ints_and_loops;
 	import javax.sound.sampled.AudioInputStream; 
 	import javax.sound.sampled.AudioSystem; 
 	import javax.sound.sampled.Clip;
+import javax.swing.JOptionPane;
+import javax.swing.text.html.MinimalHTMLWriter;
 
 import org.jointheleague.graphical.robot.Robot;
 
 	
 	public class RobotInSpace implements KeyEventDispatcher {
 		
-	Robot rob = new Robot("mini");
+		
+	Robot rob = new Robot();
 	
 	/*  
 	  Make the Robot move around the screen when the arrow keys are pressed... 
@@ -25,7 +28,7 @@ import org.jointheleague.graphical.robot.Robot;
 
 	private void moveRobot(int keyPressed) throws InterruptedException {
 	    // 2. Print out the keyPressed variable and write down the numbers for each arrow key
-
+		System.out.println();
 	    // 3. If the up arrow is pressed, move the Robot up the screen.
 		
 	    // 4. If the down arrow is pressed, move the Robot down.

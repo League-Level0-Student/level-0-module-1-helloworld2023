@@ -25,7 +25,7 @@ String password = "1243";
 String message = JOptionPane.showInputDialog("Type in a secret message.");
 // 3. Now use a pop-up to tell the NEXT user that they can only see the secret message 
 	//    if they can guess the passcode
-JOptionPane.showMessageDialog(null, "(Next user) Only you can see the secret message if you get the password correct.");
+JOptionPane.showMessageDialog(null, "Only you (the next user) can see the secret message if you get the password correct.");
 String guess = JOptionPane.showInputDialog("Can you guess what the password is?");
 	// 4. If their guess matches the password, show them the secret message
 if (guess.equals("1243")) {
